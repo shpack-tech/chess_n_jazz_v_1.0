@@ -1,0 +1,37 @@
+.main-header {
+    margin-top: 20px;
+    color: #F4F3F3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 42vw;
+    height: 94vh;
+}
+
+.main-header p {
+    margin: 0;
+}
+
+.main-header img {
+    height: 90vh;
+}
+
+@media screen and (min-width:px) {}
+
+@media screen and (max-width:1260px) {
+    .main-header img {
+        max-height: 80vh;
+    }
+}
+
+@media screen and (max-width:1100px) and (max-height:700px) {
+    .main-header img {
+        max-height: 85vh;
+    }
+}
+
+@media screen and (max-width:1100px) and (min-height:701px) {
+    .main-header img {
+        max-height: 65vh;
+    }
+}

@@ -1,0 +1,70 @@
+.rightsidebar {
+	min-width: 240px;
+	overflow: hidden;
+}
+.btnnavigation {
+	display: flex;
+	justify-content: space-between;
+	padding: 35px 50px;
+	background-color: #76fb9c;
+	button {
+		padding: 0;
+		border: none;
+		background-color: transparent;
+		cursor: pointer;
+	}
+}
+.runningline {
+	white-space: nowrap;
+	animation: running-left 15s infinite linear;
+	font-family: Soviet;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 260px;
+	line-height: 80%;
+	letter-spacing: 0.01em;
+	text-transform: uppercase;
+	color: #101010;
+	writing-mode: vertical-rl;
+	position: relative;
+	&::after {
+		position: absolute;
+		content: 'Джаз Джаз Джаз\a0';
+	}
+	&__wrapper {
+		overflow: hidden;
+		height: 100%;
+	}
+}
+
+.runningline-en {
+	white-space: nowrap;
+	animation: running-left 15s infinite linear;
+	font-family: Soviet;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 260px;
+	line-height: 80%;
+	letter-spacing: 0.01em;
+	text-transform: uppercase;
+	color: #101010;
+	writing-mode: vertical-rl;
+	position: relative;
+	&::after {
+		position: absolute;
+		content: 'Jazz Jazz Jazz\a0';
+	}
+	&__wrapper {
+		overflow: hidden;
+		height: 100%;
+	}
+}
+
+@keyframes running-left {
+	0% {
+		transform: translateY(0);
+	}
+	100% {
+		transform: translateY(-100%);
+	}
+}

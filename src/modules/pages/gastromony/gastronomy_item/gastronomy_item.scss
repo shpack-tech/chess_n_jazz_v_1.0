@@ -1,0 +1,49 @@
+.gastronomyitem{
+  padding-top: 32px;
+  padding-bottom: 26px;
+  border-top: 1px solid #BEBEBE;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  &::before{
+    position: absolute;
+    content: '';
+    width: 0px;
+    height: 1px;
+    background-color: #101010;
+    top: -1px;
+    transition: all .3s;
+  }
+  &__inner{
+    max-width: 228px;
+    &-title{
+      margin-bottom: 9px;
+      font-family: 'Akrobat';
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 100%;
+      text-transform: uppercase;
+      color: #101010;
+    }
+    &-text{
+      font-family: 'Akrobat';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 145%;
+      color: #101010;
+    }
+  }
+  .gastronomyitem__img{
+    transition: all .3s;
+  }
+  &:hover .gastronomyitem__img{
+    transform: scale(1.2);
+    transform-origin: top right;
+    // transition: all 1s;
+  }
+  &:hover::before{
+    width: 100%;
+  }
+}

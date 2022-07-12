@@ -1,0 +1,61 @@
+.mobilelecturehall {
+	background-color: #f4f3f3;
+	.lecturehallbox__title {
+		font-size: 160px;
+		line-height: 90%;
+		margin-top: 40px;
+		animation: scroll-left 25s infinite linear;
+	}
+	.lecturehallbox__schedule {
+		flex-direction: column;
+		padding: 0;
+
+		padding-bottom: 32px;
+		border: none;
+		&-date {
+			line-height: 100%;
+			padding: 18px 16px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			border-top: 1px solid #bebebe;
+			border-bottom: 1px solid #bebebe;
+			margin-bottom: 24px;
+			font-weight: 700;
+			span {
+				width: 16px;
+				height: 2px;
+				background-color: #101010;
+			}
+		}
+		&-speakers {
+			display: block;
+			overflow: hidden;
+			transition: all ease 0.5s;
+			padding-left: 16px;
+			padding-right: 16px;
+		}
+	}
+	.speaker {
+		width: 100%;
+		&__data {
+			max-width: 100%;
+			gap: 4px;
+		}
+		& + .speaker {
+			margin-top: 24px;
+		}
+		&__avatar {
+			min-width: 72px;
+			height: 72px;
+		}
+	}
+}
+@keyframes scroll-left {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(-100%);
+	}
+}

@@ -1,0 +1,94 @@
+/* =============================== marquee =============================== */
+
+.m-content .jazz-marquee-w {
+	width: inherit;
+	padding: 20px 0;
+	height: 140px;
+}
+
+.m-content .jazz-marquee-w span {
+	font-size: 160px;
+}
+
+@media screen and (min-width: 600px) {
+	.m-content .jazz-marquee-w {
+		height: 200px;
+	}
+	.m-content .jazz-marquee-w span {
+		font-size: 220px;
+	}
+}
+
+@media screen and (min-width: 900px) {
+	.m-content .jazz-marquee-w {
+		height: 270px;
+	}
+	.m-content .jazz-marquee-w span {
+		font-size: 270px;
+	}
+}
+
+/* =============================== cards =============================== */
+
+.m-cards__container {
+	margin: 0 15px;
+	display: grid;
+	grid-template-columns: repeat(2, 45.333333vw);
+	column-gap: 10px;
+	row-gap: 24px;
+	align-items: center;
+	justify-content: center;
+}
+
+.m-card__pic img {
+	width: 45.333333vw;
+	height: 45.333333vw;
+}
+
+.m-card__date {
+	font-family: 'AkrobatRegular';
+	font-size: 16px;
+	color: #bebebe;
+}
+
+.m-card__name {
+	font-family: 'AkrobatBold';
+	font-size: 20px;
+	line-height: 120%;
+	color: #f4f3f3;
+}
+
+@media screen and (max-width: 374px) {
+	.m-cards__container {
+		margin: 0 10px;
+	}
+}
+
+@media screen and (min-width: 600px) {
+	.m-cards__container {
+		grid-template-columns: repeat(3, 180px);
+	}
+	.m-card__pic img {
+		width: 170px;
+		height: 170px;
+	}
+}
+
+@media screen and (min-width: 900px) {
+	.m-cards__container {
+		grid-template-columns: repeat(4, 180px);
+	}
+}
+
+.m-content-jazz {
+	height: 100%;
+}
+
+@keyframes scroll-left {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(-100%);
+	}
+}

@@ -1,0 +1,276 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol,
+ul {
+	list-style: none;
+}
+blockquote,
+q {
+	quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+@font-face {
+	font-family: Soviet;
+}
+#root,
+body,
+html {
+	height: 100%;
+	width: 100%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@900&display=swap');
+
+:root {
+	--dark-clr: #000000;
+	--light-clr: #ffffff;
+}
+
+.chess-icon {
+	height: 80px;
+	width: 80px;
+	border: 1px solid #333;
+	background-image: conic-gradient(
+		var(--dark-clr) 0,
+		var(--dark-clr) 90deg,
+		var(--light-clr) 90deg,
+		var(--light-clr) 180deg,
+		var(--dark-clr) 180deg,
+		var(--dark-clr) 270deg,
+		var(--light-clr) 270deg,
+		var(--light-clr) 360deg
+	);
+	animation-name: loading;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes loading {
+	20% {
+		transform: rotate(90deg);
+	}
+	40% {
+		transform: rotate(180deg);
+	}
+	60% {
+		transform: rotate(270deg);
+	}
+	80% {
+		transform: rotate(360deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@media screen and (max-width: 768px) {
+	#root,
+	body,
+	html {
+		height: auto;
+		width: auto;
+	}
+}
+body {
+	overflow: hidden;
+}
+.application {
+	display: flex;
+
+	position: relative;
+	left: -100vw;
+	width: 300vw;
+}
+/* .application.wide {
+
+} */
+.application.animated-now .container:not(.child) {
+	transition: all ease 0.4s;
+}
+.application.animated-now {
+	transition: all ease 0.4s;
+}
+
+.container {
+	width: calc(100vw - 80px) !important;
+	margin-left: 80px;
+}
+
+.title_cnj {
+	width: fit-content;
+	font-family: 'Soviet';
+	font-style: normal;
+	font-size: 380px;
+	font-weight: 400;
+	line-height: 90%;
+	letter-spacing: 0.01em;
+	text-transform: uppercase;
+	color: #fff;
+	white-space: nowrap;
+	position: relative;
+}
+.title_cnj-sec {
+	width: fit-content;
+	font-family: 'Soviet';
+	font-style: normal;
+	font-size: 380px;
+	font-weight: 400;
+	line-height: 90%;
+	letter-spacing: 0.01em;
+	text-transform: uppercase;
+	color: #000;
+	white-space: nowrap;
+	position: relative;
+}
+.title_cnj.initialized {
+	animation: scroll-left 13s infinite linear;
+}
+.chess_title {
+	padding: 40px;
+	color: #000;
+	/* animation: scroll-left 10s infinite linear; */
+}
+.chess_title::after {
+	position: absolute;
+	color: #000;
+	content: 'Шахматы Шахматы Шахматы       \a0';
+}
+.chess_title-en::after {
+	position: absolute;
+	color: #000;
+	content: 'Chess Chess Chess       \a0';
+}
+.jazz_title::after {
+	color: #fff;
+
+	position: absolute;
+	content: 'Джаз Джаз Джаз Джаз\a0';
+}
+
+.jazz_title-en::after {
+	color: #fff;
+
+	position: absolute;
+	content: 'Jazz Jazz Jazz Jazz\a0';
+}
+@keyframes scroll-left {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(-100%);
+	}
+}

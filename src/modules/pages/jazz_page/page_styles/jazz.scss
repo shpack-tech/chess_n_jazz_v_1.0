@@ -1,0 +1,72 @@
+.jazz-cont {
+	display: flex;
+	flex-direction: row;
+	height: 100vh;
+	background-color: #101010;
+	justify-content: space-between;
+}
+
+.jazz-content {
+	height: 100%;
+	width: 100%;
+}
+
+.jazz-cont .nav-container {
+	height: 100vh;
+}
+
+.jazz-content__top {
+	display: flex;
+	flex-direction: row;
+	height: 45vh;
+}
+
+.jazz-right {
+	height: 45vh;
+	position: relative;
+	width: 320px;
+}
+
+.jazz__sponsor {
+	display: flex;
+	flex-direction: column;
+	text-align: right;
+	position: absolute;
+	bottom: 50px;
+	right: 40px;
+	font-family: 'AkrobatBold';
+	font-size: 12px;
+	color: #989898;
+}
+
+.jazz-right .marquee-w {
+	height: 36px;
+	padding: 10px 0 0 0;
+	transform: translate(0, 0);
+}
+
+/* ========================bot part======================== */
+
+.jazz-content__bot {
+	height: 55vh;
+	padding-top: 10px;
+	box-sizing: border-box;
+}
+
+@media screen and (max-width: 1200px) {
+	.card-bot-marquee span {
+		font-size: 80px;
+	}
+}
+
+@media screen and (max-height: 699px) {
+	.jazz-marquee span {
+		font-size: 300px;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.card-bot-marquee-w {
+		height: 80px;
+	}
+}

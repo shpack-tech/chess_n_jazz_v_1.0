@@ -1,0 +1,25 @@
+.mobileviewer{
+  background-color: #101010;
+  padding-bottom: 48px;
+  .mobilemenu__header-title{
+    color: #fff;
+  }
+  .mobilemenu__burger-item{
+    background-color: #fff;
+  }
+  &__title{
+    font-family: 'Akrobat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #F4F3F3;
+    padding-top: 38px;
+    padding-bottom: 38px;
+    text-align: center;
+  }
+  &__btn{
+    text-align: center;
+  }
+}

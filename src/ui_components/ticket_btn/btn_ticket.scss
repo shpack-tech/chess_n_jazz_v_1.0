@@ -1,0 +1,84 @@
+.btnbuyticket {
+	position: absolute;
+	z-index: 2;
+	top: 40px;
+	right: 40px;
+	max-width: 240px;
+	background-color: #76fb9c;
+	font-family: Akrobat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 100%;
+	text-transform: uppercase;
+	color: #101010;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+	overflow: hidden;
+	cursor: pointer;
+	span {
+		white-space: nowrap;
+		animation: scroll-left 0s infinite linear;
+		position: relative;
+		&::after {
+			position: absolute;
+			content: '\a0купить билет\a0\a0купить билет\a0';
+		}
+		&:nth-child(2) {
+			animation: scroll-right 0s infinite linear;
+			padding-right: 100%;
+			&::before {
+				position: absolute;
+				content: '\a0купить билет\a0\a0купить билет\a0';
+				right: 100%;
+			}
+		}
+	}
+	&:hover span {
+		animation: scroll-left 7s infinite linear;
+	}
+	&:hover span:nth-child(2) {
+		animation: scroll-right 7s infinite linear;
+	}
+}
+
+.btnbuyticket-en{
+	span {
+		white-space: nowrap;
+		animation: scroll-left 0s infinite linear;
+		position: relative;
+		&::after {
+			position: absolute;
+			content: '\a0 buy a ticket\a0\a0 buy a ticket\a0';
+		}
+		&:nth-child(2) {
+			animation: scroll-right 0s infinite linear;
+			padding-right: 100%;
+			&::before {
+				position: absolute;
+				content: '\a0 buy a ticket\a0\a0 buy a ticket\a0';
+				right: 100%;
+			}
+		}
+	}
+}
+
+@keyframes scroll-left {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(-100%);
+	}
+}
+@keyframes scroll-right {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(100%);
+	}
+}

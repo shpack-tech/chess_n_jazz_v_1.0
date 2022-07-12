@@ -1,0 +1,75 @@
+.main-title {
+  font-size: 380px;
+  font-family: 'Soviet';
+  color: #F4F3F3;
+  width: 68.427vw;
+  height: 380px;
+  white-space: nowrap;
+}
+
+
+
+////////////////////////////////////////////////////////////////////////////
+
+.final-cont {
+	height: 100vh;
+	background-color: #101010;
+}
+
+//////////////////////////////////////////////////////////////////////////////
+
+.final-content__bot {
+  height: 55vh;
+}
+
+.final-container {
+  display: flex;
+  background-color: black;
+}
+
+.final-content {
+  box-sizing: border-box;
+}
+
+.final-content__bot {
+  display: flex;
+  position: relative;
+}
+
+.final-content .jazz-content__top {
+  padding-left: 40px;
+}
+
+//////////////////////////////////////////////////////////////////////////////
+.final__info {
+  position: absolute;
+  right: 40px;
+  bottom: 36px;
+  flex-direction: column;
+  display: flex;
+}
+
+.final__info p {
+  margin: 0;
+  color: #F4F3F3;
+  font-family: 'AkrobatRegular';
+  font-size: 14px;
+  line-height: 145%;
+}
+
+.final-date {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 22px;
+}
+
+.final_copyright {
+  display: flex;
+  flex-direction: column;
+}
+
+///////////////////////////////////////////////////////////////////////////
+
+.jazz-content__top.final-content-top{
+  justify-content: space-between;
+}

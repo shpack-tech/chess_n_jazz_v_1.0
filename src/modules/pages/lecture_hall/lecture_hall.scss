@@ -1,0 +1,42 @@
+.lecturehall {
+	&__wrapper {
+		height: 100vh;
+		display: flex;
+		background-color: #f4f3f3;
+		justify-content: space-between;
+	}
+	&__next {
+		width: 40px;
+		border-left: 0.5px solid #bebebe;
+		overflow: hidden;
+		display: flex;
+		flex-direction: column;
+		row-gap: 19px;
+		align-items: center;
+		transform: scaleY(-1);
+		padding-top: 10px;
+		cursor: pointer;
+		img {
+			position: relative;
+			left: 0;
+			transition: all ease 0.5s;
+		}
+		&:hover {
+			img {
+				left: 5px;
+			}
+		}
+		span {
+			writing-mode: vertical-lr;
+			transform: scaleX(-1);
+			font-family: 'Akrobat';
+			font-style: normal;
+			font-weight: 500;
+			font-size: 12px;
+			line-height: 14px;
+			letter-spacing: 0.01em;
+			text-transform: uppercase;
+			color: #101010;
+		}
+	}
+}

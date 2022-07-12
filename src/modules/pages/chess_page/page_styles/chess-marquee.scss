@@ -1,0 +1,382 @@
+.chess_box {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin: 40px;
+	margin-bottom: 0;
+	flex: 1;
+	max-width: calc(100% - 161px);
+	&__title,
+	&__title-en {
+		width: fit-content;
+		font-family: 'Geniral';
+		font-style: normal;
+		font-size: 160px;
+		line-height: 90%;
+		margin-top: 32px;
+		letter-spacing: 0.01em;
+		text-transform: uppercase;
+		color: #101010;
+		white-space: nowrap;
+		position: relative;
+		animation: scroll-left 25s infinite linear;
+		&::after {
+			position: absolute;
+			content: 'ШАХМАТЫ ШАХМАТЫ\a0';
+		}
+		&-en::after {
+			position: absolute;
+			content: 'CHESS CHESS\a0';
+		}
+		&-inner {
+			overflow: hidden;
+			max-width: 960px;
+			width: 100%;
+		}
+		&-wrapper {
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+			flex: 1;
+		}
+	}
+	&__grid {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: repeat(3, 1fr);
+		grid-column-gap: 40px;
+	}
+	&__next {
+		display: flex;
+		align-items: center;
+		height: 40px;
+		gap: 19px;
+		white-space: nowrap;
+		overflow: hidden;
+		border-top: 1px solid #bebebe;
+		margin-left: -40px;
+		margin-right: -40px;
+		padding-left: 10px;
+		span {
+			white-space: nowrap;
+			font-family: 'Akrobat';
+			font-style: normal;
+			font-weight: 500;
+			font-size: 12px;
+			line-height: 14px;
+			letter-spacing: 0.01em;
+			text-transform: uppercase;
+			color: #101010;
+		}
+	}
+}
+
+.jazz_box {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin: 40px;
+	margin-bottom: 0;
+	flex: 1;
+	max-width: calc(100% - 161px);
+	&__title,
+	&__title-en {
+		width: fit-content;
+		font-family: 'Geniral';
+		font-style: normal;
+		font-size: 160px;
+		line-height: 90%;
+		margin-top: 32px;
+		letter-spacing: 0.01em;
+		text-transform: uppercase;
+		color: #fff;
+		white-space: nowrap;
+		position: relative;
+		animation: scroll-left 25s infinite linear;
+		&::after {
+			position: absolute;
+			content: 'ДЖАЗ ДЖАЗ\a0';
+		}
+		&-en::after {
+			position: absolute;
+			content: 'JAZZ JAZZ\a0';
+		}
+		&-inner {
+			overflow: hidden;
+			max-width: 960px;
+			width: 100%;
+		}
+		&-wrapper {
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+			flex: 1;
+		}
+	}
+	&__grid {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: repeat(3, 1fr);
+		grid-column-gap: 40px;
+	}
+	&__next {
+		display: flex;
+		align-items: center;
+		height: 40px;
+		gap: 19px;
+		white-space: nowrap;
+		overflow: hidden;
+		border-top: 1px solid #bebebe;
+		margin-left: -40px;
+		margin-right: -40px;
+		padding-left: 10px;
+		span {
+			white-space: nowrap;
+			font-family: 'Akrobat';
+			font-style: normal;
+			font-weight: 500;
+			font-size: 12px;
+			line-height: 14px;
+			letter-spacing: 0.01em;
+			text-transform: uppercase;
+			color: #101010;
+		}
+	}
+}
+
+.events_box {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin: 40px;
+	margin-bottom: 0;
+	flex: 1;
+	max-width: calc(100% - 161px);
+	&__title,
+	&__title-en {
+		width: fit-content;
+		font-family: 'Geniral';
+		font-style: normal;
+		font-size: 160px;
+		line-height: 90%;
+		margin-top: 32px;
+		letter-spacing: 0.01em;
+		text-transform: uppercase;
+		color: #101010;
+		white-space: nowrap;
+		position: relative;
+		animation: scroll-left 25s infinite linear;
+		&::after {
+			position: absolute;
+			content: 'СОБЫТИЯ СОБЫТИЯ\a0';
+		}
+		&-en::after {
+			position: absolute;
+			content: 'EVENTS EVENTS\a0';
+		}
+		&-inner {
+			overflow: hidden;
+			max-width: 960px;
+			width: 100%;
+		}
+		&-wrapper {
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+			flex: 1;
+		}
+	}
+	&__grid {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: repeat(3, 1fr);
+		grid-column-gap: 40px;
+	}
+	&__next {
+		display: flex;
+		align-items: center;
+		height: 40px;
+		gap: 19px;
+		white-space: nowrap;
+		overflow: hidden;
+		border-top: 1px solid #bebebe;
+		margin-left: -40px;
+		margin-right: -40px;
+		padding-left: 10px;
+		span {
+			white-space: nowrap;
+			font-family: 'Akrobat';
+			font-style: normal;
+			font-weight: 500;
+			font-size: 12px;
+			line-height: 14px;
+			letter-spacing: 0.01em;
+			text-transform: uppercase;
+			color: #101010;
+		}
+	}
+}
+
+.g_box {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin: 40px;
+	margin-bottom: 0;
+	flex: 1;
+	max-width: calc(100% - 161px);
+	&__title,
+	&__title-en {
+		width: fit-content;
+		font-family: 'Geniral';
+		font-style: normal;
+		font-size: 160px;
+		line-height: 90%;
+		margin-top: 32px;
+		letter-spacing: 0.01em;
+		text-transform: uppercase;
+		color: #000;
+		white-space: nowrap;
+		position: relative;
+		animation: scroll-left 25s infinite linear;
+		&::after {
+			position: absolute;
+			content: 'ГАСТРОНОМИЯ ГАСТРОНОМИЯ\a0';
+		}
+		&-en::after {
+			position: absolute;
+			content: 'GASTRONOMY GASTRONOMY\a0';
+		}
+		&-inner {
+			overflow: hidden;
+			max-width: 960px;
+			width: 100%;
+		}
+		&-wrapper {
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+			flex: 1;
+		}
+	}
+	&__grid {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: repeat(3, 1fr);
+		grid-column-gap: 40px;
+	}
+	&__next {
+		display: flex;
+		align-items: center;
+		height: 40px;
+		gap: 19px;
+		white-space: nowrap;
+		overflow: hidden;
+		border-top: 1px solid #bebebe;
+		margin-left: -40px;
+		margin-right: -40px;
+		padding-left: 10px;
+		span {
+			white-space: nowrap;
+			font-family: 'Akrobat';
+			font-style: normal;
+			font-weight: 500;
+			font-size: 12px;
+			line-height: 14px;
+			letter-spacing: 0.01em;
+			text-transform: uppercase;
+			color: #101010;
+		}
+	}
+}
+.s_box {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin: 40px;
+	margin-bottom: 0;
+	flex: 1;
+	max-width: calc(100% - 161px);
+	&__title,
+	&__title-en {
+		width: fit-content;
+		font-family: 'Geniral';
+		font-style: normal;
+		font-size: 160px;
+		line-height: 90%;
+		margin-top: 32px;
+		letter-spacing: 0.01em;
+		text-transform: uppercase;
+		color: #000;
+		white-space: nowrap;
+		position: relative;
+		animation: scroll-left 25s infinite linear;
+		&::after {
+			position: absolute;
+			content: 'ПАРТНЕРЫ ПАРТНЕРЫ\a0';
+		}
+		&-en::after {
+			position: absolute;
+			content: 'SPONSORS SPONSORS\a0';
+		}
+		&-inner {
+			overflow: hidden;
+			max-width: 960px;
+			width: 100%;
+		}
+		&-wrapper {
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+			flex: 1;
+		}
+	}
+	&__grid {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: repeat(3, 1fr);
+		grid-column-gap: 40px;
+	}
+	&__next {
+		display: flex;
+		align-items: center;
+		height: 40px;
+		gap: 19px;
+		white-space: nowrap;
+		overflow: hidden;
+		border-top: 1px solid #bebebe;
+		margin-left: -40px;
+		margin-right: -40px;
+		padding-left: 10px;
+		span {
+			white-space: nowrap;
+			font-family: 'Akrobat';
+			font-style: normal;
+			font-weight: 500;
+			font-size: 12px;
+			line-height: 14px;
+			letter-spacing: 0.01em;
+			text-transform: uppercase;
+			color: #101010;
+		}
+	}
+}
+.cts {
+	&::after {
+		content: 'ПАРТНЕРЫ ПАРТНЕРЫ\a0';
+	}
+	&-en {
+		&::after {
+			content: 'SPONSORS SPONSORS\a0';
+		}
+	}
+}
+
+@keyframes scroll-left {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(-100%);
+	}
+}

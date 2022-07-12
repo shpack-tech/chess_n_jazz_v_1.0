@@ -1,0 +1,40 @@
+
+.mobilemenu__list{
+  margin: 24px 10px 170px;
+  @media screen and (min-width: 375px) {
+    margin: 24px 21px 170px;
+  }
+  li{
+    & + li{
+      margin-top: 16px;
+    }
+    span{
+      margin-right: 7px;
+      font-family: 'Akrobat';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 145%;
+      color: #727272;
+      position: relative;
+      bottom: 18px;
+      @media screen and (min-width: 375px) {
+        bottom: 20px;
+        margin-right: 21px;
+      }
+    }
+    a{
+      font-family: 'Akrobat';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 43px;
+      line-height: 55px;
+      text-transform: uppercase;
+      color: #101010;
+      text-decoration: none;
+      @media screen and (min-width: 375px) {
+        font-size: 46px;
+      }
+    }
+  }
+}

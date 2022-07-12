@@ -1,0 +1,110 @@
+.main-page__picture {
+	height: 62vh;
+	width: 100%;
+	position: relative;
+
+	& > span {
+		display: block;
+		position: relative;
+		height: 100%;
+		width: 100%;
+	}
+}
+
+.main-page__picture img {
+	width: 100%;
+	height: calc(62vh - 56px);
+	transition: all ease 0.5s;
+	object-fit: cover;
+	position: absolute;
+	display: block;
+}
+
+.buy-ticket {
+	font-family: AkrobatBold;
+	font-size: 20px;
+	position: absolute;
+	display: block;
+	right: 40px;
+	top: 40px;
+	width: 240px;
+	height: 70px;
+}
+
+.marquee-w {
+	position: absolute;
+	display: block;
+	width: 240px;
+	display: flex;
+	text-align: center;
+	height: 35px;
+	padding: 10px 0 0 0;
+	overflow: hidden;
+	background: #76fb9c;
+	color: #101010;
+}
+
+.marquee {
+	padding: 0 0 0 5px;
+	position: absolute;
+	display: block;
+	align-items: center;
+	margin: auto auto;
+	white-space: nowrap;
+	overflow: hidden;
+	min-width: 100%;
+	height: 100%;
+}
+
+.buy-ticket:hover .marquee {
+	animation: marquee 10s linear infinite;
+}
+
+.buy-ticket:hover .mar23 {
+	animation: marquee-reversed 10s linear infinite;
+}
+
+.marquee span {
+	align-self: center;
+	cursor: pointer;
+	box-sizing: border-box;
+	text-align: center;
+	white-space: nowrap;
+	width: 240px;
+	font-size: 20px;
+}
+
+.mar2 {
+	top: 35px;
+}
+
+.marquee2 span {
+	z-index: 10;
+	animation-delay: 5s;
+}
+
+.marquee2 {
+	margin-left: 150%;
+}
+
+.marquee2.mar23 {
+	margin-left: -150%;
+}
+
+@keyframes marquee {
+	0% {
+		transform: translate(0, 0);
+	}
+	100% {
+		transform: translate(-100%, 0);
+	}
+}
+
+@keyframes marquee-reversed {
+	0% {
+		transform: translate(0, 0);
+	}
+	100% {
+		transform: translate(100%, 0);
+	}
+}

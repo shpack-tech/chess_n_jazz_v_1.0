@@ -1,0 +1,60 @@
+.mobilemenu__burger {
+	width: 64px;
+	min-height: 48px;
+	border-right: 0.5px solid #bebebe;
+	display: flex;
+	flex-direction: column;
+	gap: 14px;
+	align-items: center;
+	justify-content: center;
+	&-item {
+		width: 32px;
+		height: 2px;
+		background-color: #101010;
+		&:first-child {
+			transform: rotate(-30deg);
+			transform-origin: right;
+		}
+		&:last-child {
+			transform: rotate(30deg);
+			transform-origin: right;
+		}
+	}
+}
+// .open {
+// 	.animation__burger:first-child {
+// 		animation: closebtn1 0.2s linear forwards;
+// 	}
+// 	.animation__burger:last-child {
+// 		animation: closebtn2 0.2s linear forwards;
+// 	}
+// }
+// .closed {
+// 	.animation__burger:first-child {
+// 		animation: openbtn1 0.2s linear forwards;
+// 	}
+// 	.animation__burger:last-child {
+// 		animation: openbtn2 0.2s linear forwards;
+// 	}
+// }
+
+@keyframes closebtn1 {
+	0% {
+		transform: rotate(-30deg);
+		opacity: 100%;
+	}
+	100% {
+		transform: rotate(0deg);
+		opacity: 0;
+	}
+}
+@keyframes closebtn2 {
+	0% {
+		transform: rotate(30deg);
+		opacity: 100%;
+	}
+	100% {
+		transform: rotate(0deg);
+		opacity: 0;
+	}
+}

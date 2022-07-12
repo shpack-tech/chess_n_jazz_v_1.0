@@ -1,0 +1,88 @@
+.chess-events {
+	display: flex;
+	flex-direction: row;
+}
+
+.chess-event {
+	height: 100%;
+	width: 190px;
+}
+
+.chess-table {
+	display: flex;
+	flex-direction: row;
+	height: 470px;
+}
+
+.chess-picture img {
+	object-fit: cover;
+}
+
+.chess-events {
+	border-top: 1px solid #bebebe;
+}
+
+.chess-events p {
+	margin: 0;
+}
+
+.chess-event {
+	box-sizing: border-box;
+	padding: 30px;
+}
+
+.event-date {
+	font-family: AkrobatRegular;
+	font-size: 16px;
+}
+
+.event-name {
+	font-family: AkrobatBold;
+	font-size: 32px;
+	margin: 30px 0 30px 0;
+}
+
+.event-text {
+	font-family: AkrobatRegular;
+	font-size: 14px;
+	line-height: 145%;
+}
+
+.event-author {
+	display: flex;
+	align-items: center;
+	white-space: nowrap;
+	margin-bottom: 19px;
+}
+
+.event-author-pic img {
+	margin-right: 8px;
+	display: flex;
+	align-items: center;
+	width: 26px;
+	height: 26px;
+}
+
+.event-active {
+	color: #f4f3f3;
+}
+
+.event-active .event-author {
+	color: #f4f3f3;
+}
+
+.event-active {
+	background-color: #101010;
+}
+
+.event-author-name {
+	font-family: AkrobatRegular;
+	font-size: 16px;
+	line-height: 145%;
+}
+
+@media screen and (max-width: 1400px) {
+	.chess-picture img {
+		max-width: 55vw;
+	}
+}

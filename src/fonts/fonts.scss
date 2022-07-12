@@ -1,0 +1,71 @@
+@font-face {
+     font-family: "Akrobat";
+     src: url("./akrobat/Akrobat-Thin.otf") format("otf"),
+          url('./akrobat/Akrobat-Thin.woff') format('woff'),
+          url('./akrobat/Akrobat-Thin.woff2') format('woff2');
+     font-weight: 100;
+}
+
+@font-face {
+     font-family: "Akrobat";
+     src: url("./akrobat/Akrobat-ExtraLight.otf") format("otf"),
+          url('./akrobat/Akrobat-ExtraLight.woff') format('woff'),
+          url('./akrobat/Akrobat-ExtraLight.woff2') format('woff2');
+     font-weight: 200;
+}
+ @font-face {
+     font-family: "Akrobat";
+     src: url("./akrobat/Akrobat-Light.otf") format("otf"),
+          url('./akrobat/Akrobat-Light.woff') format('woff'),
+          url('./akrobat/Akrobat-Light.woff2') format('woff2');
+     font-weight: 300;
+}
+
+@font-face {
+     font-family: "Akrobat";
+     src: url("./akrobat/Akrobat-Regular.otf") format("otf"),
+          url('./akrobat/Akrobat-Regular.woff') format('woff'),
+          url('./akrobat/Akrobat-Regular.woff2') format('woff2');
+     font-weight: 500;
+}
+
+ @font-face {
+     font-family: "Akrobat";
+     src: url("./akrobat/Akrobat-SemiBold.otf") format("otf"),
+          url('./akrobat/Akrobat-SemiBold.woff') format('woff'),
+          url('./akrobat/Akrobat-SemiBold.woff2') format('woff2');
+     font-weight: 600;
+}
+
+@font-face {
+     font-family: "Akrobat";
+     src: url("./akrobat/Akrobat-Bold.otf") format("otf"),
+          url('./akrobat/Akrobat-Bold.woff') format('woff'),
+          url('./akrobat/Akrobat-Bold.woff2') format('woff2');
+     font-weight: 700;
+}
+
+@font-face {
+     font-family: "Akrobat";
+     src: url("./akrobat/Akrobat-ExtraBold.otf") format("otf"),
+          url('./akrobat/Akrobat-ExtraBold.woff') format('woff'),
+          url('./akrobat/Akrobat-ExtraBold.woff2') format('woff2');
+     font-weight: 800;
+}
+
+@font-face {
+     font-family: "Akrobat";
+     src: url("./akrobat/Akrobat-Black.otf") format("otf"),
+          url('./akrobat/Akrobat-Black.woff') format('woff'),
+          url('./akrobat/Akrobat-Black.woff2') format('woff2');
+     font-weight: 900;
+}
+
+@font-face {
+     font-family: 'Geniral';
+     src: url('./Neue_soviet/Neue_soviet.ttf') format('truetype'),
+          url('./Neue_soviet/AnyConv.com__Neue_soviet.woff') format('woff'),
+          url('./Neue_soviet/AnyConv.com__Neue_soviet.woff2') format('woff2');
+     font-style: normal;
+     font-weight: normal;
+}

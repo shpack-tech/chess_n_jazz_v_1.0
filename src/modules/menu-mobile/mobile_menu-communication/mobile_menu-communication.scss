@@ -1,0 +1,40 @@
+.mobilemenu__communication{
+  margin-left: 32px;
+  padding-bottom: 25px;
+  @media screen and (min-width: 375px) {
+    margin-left: 64px;
+  }
+  div{
+    font-family: 'Akrobat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: #727272;
+  }
+  &-mail,
+  &-social{
+    display: flex;
+    flex-direction: column;
+  }
+  &-mail{
+    margin-bottom: 41px;
+  }
+  a{
+    font-family: 'Akrobat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 120%;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+    color: #101010;
+    margin-top: 14px;
+  }
+  &-social__items{
+    display: flex;
+    column-gap: 24px;
+  }
+}

@@ -1,0 +1,53 @@
+.chess-button {
+	background: #f4f3f3;
+	height: 2.77777vw;
+	transform: rotate(-90deg);
+	/* position: absolute; */
+	right: 0;
+	top: 0;
+	display: flex;
+	white-space: nowrap;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.chess-button__content {
+	color: #101010;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.chess-button__content img {
+	margin: 0 20px 0 20px;
+	top: 50%;
+}
+
+.chess-button2 {
+	cursor: pointer;
+	width: 2.77777vw;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	background: #f4f3f3;
+}
+.chess-button2 img {
+	position: relative;
+	left: 0;
+	transition: all ease 0.3s;
+}
+.chess-button2:hover img {
+	left: 5px;
+}
+.chess-button__content2 {
+	transform: rotate(-90deg);
+	color: #101010;
+	display: flex;
+	align-items: center;
+	font-family: AkrobatRegular;
+	line-height: 90%;
+	font-size: 12px;
+}
