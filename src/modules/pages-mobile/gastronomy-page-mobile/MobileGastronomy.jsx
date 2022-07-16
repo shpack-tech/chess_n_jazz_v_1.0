@@ -1,11 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import itemlogo1 from '../../../assets/images/partners/gastronomyitem-logo-1.png';
-import itemlogo2 from '../../../assets/images/partners/gastronomyitem-logo-2.png';
-import itemlogo3 from '../../../assets/images/partners/gastronomyitem-logo-3.png';
-import itemlogo4 from '../../../assets/images/partners/gastronomyitem-logo-4.png';
-import itemlogo5 from '../../../assets/images/partners/gastronomyitem-logo-5.png';
-import itemlogo6 from '../../../assets/images/partners/gastronomyitem-logo-6.png';
-import itemlogo7 from '../../../assets/images/partners/gastronomyitem-logo-7.png';
 import GastronomyItem from '../../pages/gastromony/gastronomy_item/GastronomyItem';
 import './mobile_gastronomy.scss';
 import { useTranslation } from 'react-i18next';

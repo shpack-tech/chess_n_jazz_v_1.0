@@ -7,31 +7,12 @@ import './page_styles/jazz_chess-btn.scss';
 import './page_styles/jazz.scss';
 
 import arrow from '../../../assets/icons/arrow-next.svg';
-import artist_avatar from '../../../assets/images/artists/artist-avatar.jpg';
-import artist2 from '../../../assets/images/heap/Portico_Quartet.png';
-import artist1 from '../../../assets/images/heap/image_82.png';
-import artist_detail1 from '../../../assets/images/artists/agutin.jpg';
-// import artist_avatar from '../../../assets/images/artists/portico-quartet.jpg';
 
 import BtnTicket from '../../../ui_components/ticket_btn/BtnTicket';
 import ArtistSquare from './artist_square/ArtistSquare';
 import ArtistPage from './../../artist_page/ArtistPage';
-import ChessPage from '../chess_page/ChessPage';
 
 import { PageContext } from '../../../PageContext';
-
-const artists = [
-	{
-		pic: artist_detail1,
-		name: 'author-name',
-		date: '30.07',
-		detail_date: 'date',
-		time: '',
-		time_end: '',
-		detailed: artist_detail1,
-		description: 'artist_description',
-	},
-];
 
 function JazzPage(params) {
 	const [isArtist, setIsArtist] = useState(null);

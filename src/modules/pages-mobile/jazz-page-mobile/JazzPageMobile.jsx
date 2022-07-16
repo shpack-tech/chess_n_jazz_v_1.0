@@ -1,13 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import axios from 'axios';
-import arrow from '../../../assets/icons/arrow-next.svg';
-import artist2 from '../../../assets/images/heap/Portico_Quartet.png';
-import artist1 from '../../../assets/images/heap/image_82.png';
-import artist_detail1 from '../../../assets/images/artists/agutin.jpg';
-import artist_detail2 from '../../../assets/images/artists/portico-quartet.jpg';
-import asterisk from '../../../assets/icons/star.svg';
-import artist_avatar from '../../../assets/images/artists/artist-avatar.jpg';
 
 import './jazz_page_mobile.scss';
 

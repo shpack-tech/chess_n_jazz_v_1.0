@@ -1,13 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react';
 import './gastronomy-box.scss';
 import GastronomyItem from '../gastronomy_item/GastronomyItem';
-import itemlogo1 from '../../../../assets/images/partners/gastronomyitem-logo-1.png';
-import itemlogo2 from '../../../../assets/images/partners/gastronomyitem-logo-2.png';
-import itemlogo3 from '../../../../assets/images/partners/gastronomyitem-logo-3.png';
-import itemlogo4 from '../../../../assets/images/partners/gastronomyitem-logo-4.png';
-import itemlogo5 from '../../../../assets/images/partners/gastronomyitem-logo-5.png';
-import itemlogo6 from '../../../../assets/images/partners/gastronomyitem-logo-6.png';
-import itemlogo7 from '../../../../assets/images/partners/gastronomyitem-logo-7.png';
 import vector10 from '../../../../assets/icons/Vector 10.svg';
 import BtnTicket from '../../../../ui_components/ticket_btn/BtnTicket';
 

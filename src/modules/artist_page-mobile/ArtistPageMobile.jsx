@@ -16,11 +16,6 @@ SwiperCore.use([Navigation]);
 function ArtistPageMobile(params) {
 	const prevRef = useRef(null);
 	const nextRef = useRef(null);
-	// const sliderRef = useRef(null);
-
-	// useEffect(() => {
-	// 	sliderRef.slideTo(+params.slide);
-	// });
 
 	return (
 		<div className="mobileartistpage" style={{ height: 'auto' }}>

@@ -1,15 +1,14 @@
 import React, { useEffect, useState, useContext } from 'react';
 import { useSpring, a } from '@react-spring/web';
 import axios from 'axios';
-import MobileMenuHeader from '../../menu-mobile/mobile_menu-header/MobileMenuHeader';
+
 import './page_styles-mobile/start_page-mobile.scss';
 import './page_styles-mobile/picture-mobile.scss';
 import './page_styles-mobile/menu-mobile.scss';
 import heading from '../../../assets/icons/H1Chess&Jazz.svg';
-import asterisk from '../../../assets/icons/star.svg';
+
 import MPSlider from './slider_mp/MPSlider';
-import BtnTicket from '../../../ui_components/ticket_btn/BtnTicket';
-import { PageContext } from '../../../PageContext';
+
 import { useTranslation } from 'react-i18next';
 
 function StartPageMobile(params) {

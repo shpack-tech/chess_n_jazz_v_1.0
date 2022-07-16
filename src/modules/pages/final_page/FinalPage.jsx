@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import BtnTicket from '../../../ui_components/ticket_btn/BtnTicket';
 import axios from 'axios';
-import Map from '../../map/Map';
 
 import './page_styles/final.scss';
 

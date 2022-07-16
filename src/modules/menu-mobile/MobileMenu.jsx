@@ -1,5 +1,4 @@
-import React, { useState, useContext } from 'react';
-import { PageContext } from '../../PageContext';
+import React from 'react';
 
 import MobileMenuCommunication from './mobile_menu-communication/MobileMenuCommunication';
 import MobileMenuHeader from './mobile_menu-header/MobileMenuHeader';

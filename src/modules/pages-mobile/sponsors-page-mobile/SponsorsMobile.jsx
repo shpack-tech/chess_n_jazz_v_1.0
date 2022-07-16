@@ -1,11 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import axios from 'axios';
-import sponsor1 from '../../../assets/icons/sp1.svg';
-import sponsor2 from '../../../assets/icons/Porsche.svg';
-import sponsor3 from '../../../assets/icons/Visa.svg';
-import sponsor4 from '../../../assets/icons/Lamoda.svg';
-import sponsor5 from '../../../assets/icons/Точка.svg';
 
 function SponsorPageMobile() {
 	const { t, i18n } = useTranslation();
@@ -41,10 +36,43 @@ function SponsorPageMobile() {
 					</span>
 				</div>
 			</div>
-			<div className="s-box-m" style={ms_styles}>
-				{pool.map((el, i) => {
-					return <img src={el.logo} key={i} style={{ maxWidth: '100px' }} alt={el.name} />;
-				})}
+			<div className="s-box-m">
+				{pool.length > 0 ? (
+					<div className="bottom_sponsor_row">
+						<div className="sponsors_official">
+							<h1>{t('of_s')}</h1>
+							<div>
+								{pool.map((el, i) => {
+									if (i < 8) {
+										return (
+											<span key={i}>
+												<img src={el.logo} alt={el.name} name={el.name} />
+											</span>
+										);
+									}
+								})}
+							</div>
+						</div>
+						<div className="sponsors_info">
+							<h1>{t('inf_s')}</h1>
+							<div>
+								{pool.map((el, i) => {
+									if (i >= 8) {
+										return (
+											<span key={i}>
+												<img src={el.logo} alt={el.name} name={el.name} />
+											</span>
+										);
+									}
+								})}
+							</div>
+						</div>
+					</div>
+				) : (
+					<div style={{ width: '100%', height: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+						<div className="chess-icon"></div>
+					</div>
+				)}
 			</div>
 		</div>
 	);

@@ -2,8 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import axios from 'axios';
 import './final_page_mobile.scss';
-import asterisk from '../../../assets/icons/star.svg';
-import instainst from '../../../assets/icons/instainst.svg';
 import vkvk from '../../../assets/icons/vkvk.svg';
 import youtubeyt from '../../../assets/icons/youtubeyt.svg';
 

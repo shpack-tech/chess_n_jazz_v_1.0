@@ -1,28 +1,14 @@
 import React, { useContext, useState, useEffect } from 'react';
-import vector10 from '../../../assets/icons/Vector 10.svg';
 import BtnTicket from '../../../ui_components/ticket_btn/BtnTicket';
 import { useTranslation } from 'react-i18next';
 import { PageContext } from '../../../PageContext';
 import arrow from '../../../assets/icons/arrow-next.svg';
-import sponsor1 from '../../../assets/icons/sp1.svg';
-import sponsor2 from '../../../assets/icons/Porsche.svg';
-import sponsor3 from '../../../assets/icons/Visa.svg';
-import sponsor4 from '../../../assets/icons/Lamoda.svg';
-import sponsor5 from '../../../assets/icons/Точка.svg';
 import axios from 'axios';
-
-const s_style = {
-	display: 'grid',
-	gridTemplateColumns: 'repeat(7, 1fr)',
-	gridTemplateRows: 'repeat(4, 1fr)',
-	gridColumnGap: '10px',
-	gridRowGap: '10px',
-};
+import './grid-css-css.scss';
 
 function SponsorPage(params) {
 	const { t, i18n } = useTranslation();
 	const [page, setPage] = useContext(PageContext);
-	const [company, setCompany] = useState(false);
 	const [pool, setPool] = useState([]);
 
 	useEffect(() => {
@@ -35,7 +21,7 @@ function SponsorPage(params) {
 	}, []);
 
 	return (
-		<div className=" container sponsors" style={{ width: 'calc(100% - 84px)', background: '#fff', height: '100vh', display: 'flex' }}>
+		<div className=" container sponsors" style={{ width: 'calc(100% - 84px)', background: '#F4F3F3', height: '100vh', display: 'flex' }}>
 			<div style={{ width: '100%', padding: '40px' }}>
 				<div className="top_sponsor_row" style={{ width: '100%' }}>
 					<div className="chess-content__top" style={{ width: '100%' }}>
@@ -71,45 +57,40 @@ function SponsorPage(params) {
 							}}
 						>
 							<BtnTicket />
-							{company ? (
-								<div
-									className="sponsor-display"
-									style={{
-										fontSize: '16px',
-										color: 'color: #727272',
-										width: '250px',
-										textAlign: 'right',
-										position: 'relative',
-										right: '40px',
-										bottom: '100px',
-										display: 'flex',
-										flexDirection: 'column',
-										opacity: '0.7',
-									}}
-								>
-									<span>{t('company')}</span>
-									<span>{company}</span>
-								</div>
-							) : (
-								''
-							)}
 						</div>
 					</div>
 				</div>
+
 				{pool.length > 0 && !params.child ? (
-					<div className="bottom_sponsor_row" style={s_style}>
-						{pool.map((el, i) => {
-							return (
-								<img
-									src={el.logo}
-									key={i}
-									alt={el.name}
-									name={el.name}
-									onMouseEnter={() => setCompany(el.name)}
-									onMouseLeave={() => setCompany(false)}
-								/>
-							);
-						})}
+					<div className="bottom_sponsor_row">
+						<div className="sponsors_official">
+							<h1>{t('of_s')}</h1>
+							<div>
+								{pool.map((el, i) => {
+									if (i < 8) {
+										return (
+											<span key={i}>
+												<img src={el.logo} alt={el.name} name={el.name} />
+											</span>
+										);
+									}
+								})}
+							</div>
+						</div>
+						<div className="sponsors_info">
+							<h1>{t('inf_s')}</h1>
+							<div>
+								{pool.map((el, i) => {
+									if (i >= 8) {
+										return (
+											<span key={i}>
+												<img src={el.logo} alt={el.name} name={el.name} />
+											</span>
+										);
+									}
+								})}
+							</div>
+						</div>
 					</div>
 				) : (
 					<div style={{ width: '100%', height: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>

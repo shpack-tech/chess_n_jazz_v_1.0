@@ -7,8 +7,6 @@ import './page_styles/chess-marquee.scss';
 import './page_styles/chess.scss';
 
 import arrow from '../../../assets/icons/arrow-next.svg';
-import sponsor from '../../../assets/images/heap/chess_village_sponsor.png';
-import chess_img1 from '../../../assets/images/heap/chess_img1.JPG';
 
 import BtnTicket from '../../../ui_components/ticket_btn/BtnTicket';
 import ChessSlider from './chess_slider/ChessSlider';

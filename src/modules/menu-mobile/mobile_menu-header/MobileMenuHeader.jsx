@@ -1,19 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import { PageContext } from '../../../PageContext';
 import { useTranslation } from 'react-i18next';
 import axios from 'axios';
-import MobileMenuBtnBuyTicket from './mobile_menu-btnbyticket/MobileMenuBtnBuyTicket';
 import MobileMenuList from '../mobile_menu-list/MobileMenuList';
-import MobileMenuCommunication from '../mobile_menu-communication/MobileMenuCommunication';
 import './mobile_menu-header.scss';
-import MobileMenuBurger from './mobile_menu-burger/MobileMenuBurger';
-import MobileMenuBody from '../mobile_menu-body/MobileMenuBody';
 
 import asterisk from '../../../assets/icons/star.svg';
 
 function MobileMenuHeader() {
 	const [menuMobileState, setMenuMobileState] = useState(false);
-	const [buyTicket, setBuyTicket] = useState(false);
 	const { t, i18n } = useTranslation();
 	const [info, setInfo] = useState([]);
 

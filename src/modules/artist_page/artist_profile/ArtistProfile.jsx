@@ -1,7 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import './artist_profile.scss';
-// import photoJR from '../../../assets/images/photos/photo-Jordan-Rakei.png';
 
 function ArtistProfile(params) {
 	const { t, i18n } = useTranslation();

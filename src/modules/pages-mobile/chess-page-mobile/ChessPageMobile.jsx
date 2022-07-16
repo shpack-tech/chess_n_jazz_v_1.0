@@ -3,13 +3,6 @@ import { useTranslation } from 'react-i18next';
 
 import MobileChessEvent from './mobile_chess_event/MobileChessEvent';
 import axios from 'axios';
-import imgchess from '../../../assets/images/heap/2018-07-07_15-13-37_AG (1) 1.png';
-import imgautor from '../../../assets/images/heap/2019-07-26_19-20-39_GORSHENIN 1.png';
-import asterisk from '../../../assets/icons/star.svg';
-import slider_1 from '../../../assets/images/chess/chess2.JPG';
-import slider_2 from '../../../assets/images/chess/chess3.jpeg';
-import slider_3 from '../../../assets/images/chess/chess4.JPG';
-import slider_4 from '../../../assets/images/chess/chess5.JPG';
 
 import './chees_page_mobile.scss';
 

@@ -54,18 +54,18 @@ function MenuBody(params) {
 				</li>
 				<li>
 					<span>04 /</span>
+					<a href="/sponsors">{t('sponsors')}</a>
+					<span>
+						<img src={menu_arrow} alt="" />
+					</span>
+				</li>
+				<li>
+					<span>05 /</span>
 					<a href="/contacts">{t('events_contacts')}</a>
 					<span>
 						<img src={menu_arrow} alt="" />
 					</span>
 				</li>
-				{/* <li>
-					<span>07 /</span>
-					<a href="/sponsors">{t('sponsors')}</a>
-					<span>
-						<img src={menu_arrow} alt="" />
-					</span>
-				</li> */}
 			</ul>
 			<BtnTicket />
 		</animated.div>

@@ -9,17 +9,11 @@ import JazzPage from './modules/pages/jazz_page/JazzPage';
 import ChessPage from './modules/pages/chess_page/ChessPage';
 import FinalPage from './modules/pages/final_page/FinalPage';
 import MenuBar from './modules/menu/MenuBar';
-import MobileMenu from './modules/menu-mobile/MobileMenu';
 import StartPageMobile from './modules/pages-mobile/start_page-mobile/StartPageMobile';
 import JazzPageMobile from './modules/pages-mobile/jazz-page-mobile/JazzPageMobile';
 import ChessPageMobile from './modules/pages-mobile/chess-page-mobile/ChessPageMobile';
 import EventsPageMobile from './modules/pages-mobile/events-page-mobile/EventsPageMobile';
 import FinalPageMobile from './modules/pages-mobile/final-page-mobile/FinalPageMobile';
-
-import isDesktop from './scripts/isDesktop';
-
-import logo from './logo.svg';
-import './App.css';
 import ArtistPageMobile from './modules/artist_page-mobile/ArtistPageMobile';
 import MobileMenuHeader from './modules/menu-mobile/mobile_menu-header/MobileMenuHeader';
 import EventsPage from './modules/pages/events_page/EventsPage';
@@ -29,6 +23,8 @@ import LectureHall from './modules/pages/lecture_hall/LectureHall';
 import MobileLectureHall from './modules/pages-mobile/mobile_lecture_hall/MobileLectureHall';
 import SponsorPage from './modules/pages/sponsors_page/SponsorsPage';
 import SponsorPageMobile from './modules/pages-mobile/sponsors-page-mobile/SponsorsMobile';
+import isDesktop from './scripts/isDesktop';
+import './App.css';
 
 const pages = [
 	{
@@ -61,11 +57,11 @@ const pages = [
 		page: <EventsPage child={true} />,
 		theme: 'light',
 	},
-	// {
-	// 	path: '/sponsors',
-	// 	page: <SponsorPage child={true} />,
-	// 	theme: 'light',
-	// },
+	{
+		path: '/sponsors',
+		page: <SponsorPage child={true} />,
+		theme: 'light',
+	},
 	{
 		path: '/contacts',
 		page: <FinalPage child={true} />,
@@ -242,7 +238,7 @@ function App() {
 								{/* <Route path="/lecture-hall" element={<LectureHall />} /> */}
 								{/* <Route path="/gastronomy" element={<Gastronomy />} /> */}
 								<Route path="/events" element={<EventsPage />} />
-								{/* <Route path="/sponsors" element={<SponsorPage />} /> */}
+								<Route path="/sponsors" element={<SponsorPage />} />
 								<Route path="/contacts" element={<FinalPage />} />
 							</Routes>
 						</Suspense>
@@ -293,7 +289,7 @@ function App() {
 				{/* <MobileLectureHall /> */}
 				{/* <MobileGastronomy /> */}
 				<EventsPageMobile />
-				{/* <SponsorPageMobile /> */}
+				<SponsorPageMobile />
 				<FinalPageMobile />
 			</>
 		);

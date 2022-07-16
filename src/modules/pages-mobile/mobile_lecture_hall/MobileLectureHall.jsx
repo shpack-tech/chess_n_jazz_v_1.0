@@ -1,11 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Speaker from '../../pages/lecture_hall/speaker/speaker';
 import './mobile_lecture_hall.scss';
-import speaker1 from '../../../assets/images/artist_avatars/speaker_ava-1.png';
-import speaker2 from '../../../assets/images/artist_avatars/speaker_ava-2.png';
-import speaker3 from '../../../assets/images/artist_avatars/speaker_ava-3.png';
-import speaker4 from '../../../assets/images/artist_avatars/speaker_ava-4.png';
-import speaker5 from '../../../assets/images/artist_avatars/speaker_ava-5.png';
+
 import { useTranslation } from 'react-i18next';
 import axios from 'axios';
 

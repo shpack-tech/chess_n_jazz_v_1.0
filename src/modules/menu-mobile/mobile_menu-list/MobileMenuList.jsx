@@ -4,8 +4,6 @@ import { useTranslation } from 'react-i18next';
 import './mobile_menu-list.scss';
 
 import { useSpring, animated } from 'react-spring';
-import { Manipulation } from 'swiper';
-import i18n from '../../../i18n';
 
 function MobileMenuList(params) {
 	const { t, i18n } = useTranslation();
@@ -40,13 +38,13 @@ function MobileMenuList(params) {
 			anchor: 'events',
 			title: 'events',
 		},
-		// {
-		// 	num: '06',
-		// 	anchor: 'sponsors',
-		// 	title: 'sponsors',
-		// },
 		{
 			num: '04',
+			anchor: 'sponsors',
+			title: 'sponsors',
+		},
+		{
+			num: '05',
 			anchor: 'contacts',
 			title: 'events_contacts',
 		},
